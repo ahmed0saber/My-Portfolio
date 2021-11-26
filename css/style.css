@@ -4,9 +4,23 @@
     font-family: sans-serif;
 }
 body{
-    background-image: linear-gradient(45deg, #023047 25%, #ffb703 25%, #ffb703 50%, #023047 50%, #023047 75%, #ffb703 75%, #ffb703 100%);
-    background-size: 56.57px 56.57px;
     min-height: 100vh;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #021027;
+    border: none;
+}
+::-webkit-scrollbar-track:hover {
+    background: #023047;
+}
+::-webkit-scrollbar-thumb {
+    background: #df9703;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ffb703;
 }
 
 header{
@@ -22,6 +36,7 @@ header p{
     font-size: 20px;
     color: #ffb703;
     padding: 10px;
+    font-weight: bold;
 }
 header nav{
     position: absolute;
@@ -41,6 +56,11 @@ header a:hover{
     font-size: 16px;
 }
 
+#home_container{
+    background-image: linear-gradient(45deg, #023047 25%, #ffb703 25%, #ffb703 50%, #023047 50%, #023047 75%, #ffb703 75%, #ffb703 100%);
+    background-size: 56.57px 56.57px;
+    min-height: 100vh;
+}
 #home{
     min-height: 100vh;
     max-width: 100vw;
@@ -48,7 +68,7 @@ header a:hover{
     flex-direction: row;
     flex: 1;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #0006;
 }
 #home img{
@@ -72,20 +92,130 @@ header a:hover{
     -webkit-text-stroke: 1px #0002;
 }
 
+#about_container{
+    min-height: 100vh;
+    background-color: #EEB400;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath data-color='outline' fill='none' stroke='%23023047' stroke-width='5' d='M0 0h100v50H0zM-50 50h100v50h-100zM50 50h100v50h-100z'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 #about{
     min-height: 100vh;
+    max-width: 100vw;
     display: flex;
     flex-direction: row;
     flex: 1;
     align-items: center;
-    justify-content: space-around;
-    background-color: #001930;
+    justify-content: space-evenly;
+    background-color: #0006;
+}
+#about h1{
+    color: #ffb703;
+    font-size: 45px;
+    margin: 0px 0px 10px 0px;
+    text-shadow: 0px 0px 5px #000;
+    -webkit-text-stroke: 2px #0004;
+}
+#about p{
+    color: #ffb703;
+    font-size: 20px;
+    text-shadow: 0px 0px 5px #000;
+    -webkit-text-stroke: 1px #0002;
+}
+
+#projects_container{
+    min-height: 100vh;
+    background-color: #023047;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath data-color='outline' fill='none' stroke='%23EEB400' stroke-width='5' d='M33.5 100V66.5H0v-33h33.5V0h33v33.5H100v33H66.5V100z'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#projects{
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: #0006;
+}
+#all_projects{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+#projects h1{
+    color: #ffb703;
+    font-size: 45px;
+    padding: 50px 0px 0px 0px;
+    margin: 0px 0px 10px 0px;
+    text-shadow: 0px 0px 5px #000;
+    -webkit-text-stroke: 2px #0004;
+}
+#projects p{
+    color: #ffb703;
+    font-size: 20px;
+    text-shadow: 0px 0px 5px #000;
+    -webkit-text-stroke: 1px #0002;
+}
+.project{
+    height: 250px;
+    min-width: 260px;
+    max-width: 360px;
+    flex: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border: 5px solid #f2f2f2;
+}
+.project #description{
+    font-size: 50px;
+    color: #f2f2f2;
+}
+
+#contact_container{
+    min-height: 100vh;
+    background-color: #023047;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath id='a' data-color='fill' fill='%23EEB400' d='M50 50H0V0h50v50zM35 35V15H15v20h20zM100 100H50V50h50v50zM85 85V65H65v20h20zM35 64.9571v20H15v-20zM85 14.9571v20H65v-20z'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#contact{
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #0006;
+}
+#contact h1{
+    color: #ffb703;
+    font-size: 45px;
+    margin: 0px 0px 10px 0px;
+    text-shadow: 0px 0px 5px #000;
+    -webkit-text-stroke: 2px #0004;
+}
+#contact p{
+    color: #ffb703;
+    font-size: 20px;
+    text-shadow: 0px 0px 5px #000;
+    -webkit-text-stroke: 1px #0002;
 }
 
 
-
 @media screen and (max-width: 750px) {
-    #home{
+    #home, #about, #contact{
         flex-direction: column;
         justify-content: center;
     }
