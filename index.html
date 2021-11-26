@@ -5,16 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed Saber's Portfolio</title>
+    <link rel="icon" href="./images/myPic.jpg" type="image/x-icon">
+    <meta name="description" content="An egyptian Native PHP Full Stack Web Developer who was born in 2001.">
+    <meta name="keywords" content="portfolio, Ahmed Saber, Full Stack Web Developer">
+    <meta name="author" content="Ahmed Saber">
+    <meta property="og:title" content="Ahmed Saber's Portfolio">
+    <meta property="og:description" content="An egyptian native PHP full stack web developer who was born in 2001.">
+    <meta property="og:image" content="./images/myPic.jpg">
     <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <p>My Portfolio</p>
         <nav>
-            <a href="#home_container">Home</a>
-            <a href="#about_container">About</a>
-            <a href="#projects_container">Projects</a>
-            <a href="#contact_container">Contact</a>
+            <ul class="menu-list">
+                <li><a href="#home_container">Home</a></li>
+                <li><a href="#about_container">About</a></li>
+                <li><a href="#projects_container">Projects</a></li>
+                <li><a href="#contact_container">Contact</a></li>
+            </ul>
+            <button>
+                <i class="fa fa-times"></i>
+                <i class="fa fa-bars"></i>
+            </button>
         </nav>
     </header>
 
@@ -27,6 +41,11 @@
                 <section id="myInfo">
                     <h1>Ahmed Saber</h1>
                     <p>A Full Stack Web Developer</p>
+                    <a href="https://github.com/ahmed0saber" target="_blank"><i class="fa fa-github icons"></i></a>
+                    <a href="https://www.linkedin.com/in/ahmed0saber/" target="_blank"><i class="fa fa-linkedin icons"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100004875915808" target="_blank"><i class="fa fa-facebook icons"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=+201208611892&text=Hi" target="_blank"><i class="fa fa-whatsapp icons"></i></a>
+                    <a href="https://t.me/ahmed0saber" target="_blank"><i class="fa fa-telegram icons"></i></a>
                 </section>
             </section>
         </section>
@@ -34,7 +53,18 @@
         <section id="about_container">
             <section id="about">
                 <h1>About</h1>
-                <p>Type the about info here</p>
+                <section>
+                    <h3>Birth</h3>
+                    <p>Born in 2001, at Desouk, Kafr El Sheikh, Egypt.</p>
+                    <hr>
+                    <h3>Education</h3>
+                    <p>Studies Bachelor of Applied Science at faculty of Science, Kafr El Sheikh university</p>
+                    <hr>
+                    <h3>Who is me ?!</h3>
+                    <p>I'm a Full Stack Web Developer, who has obtained experience working with HTML, CSS, JavaScript, jQuery, Bootstrap, VueJS, ElectronJS, PHP and SQL , familiar with hosting services such as GitHub, w3spaces, Heroku, 000webhost and infinityfree.</p>
+                    <p>I prefer working in teams rather than sololy working even if I'm better alone as I can finish my work much more faster but I love supporting team mates, gathering together, solving our problems and challenging each other.</p>
+                    <p>Scroll down to see my simple projects which you can preview.</p>
+                </section>
             </section>
         </section>
 
@@ -57,25 +87,25 @@
                     <section class="project">
                         <p id="description">5</p>
                     </section>
-                    <section class="project">
-                        <p id="description">6</p>
-                    </section>
-                    <section class="project">
-                        <p id="description">7</p>
-                    </section>
-                    <section class="project">
-                        <p id="description">8</p>
-                    </section>
                 </section>
             </section>
         </section>
 
         <section id="contact_container">
             <section id="contact">
-                <h1>Contact</h1>
-                <p>Contact form here</p>
+                <section>
+                    <h1>Contact</h1>
+                </section>
+                <section id="form">
+                    <label for="name" id="name-label">Enter your name</label><br>
+                    <input type="text" name="name" id="name" placeholder="Full name" autocomplete="off"><br>
+                    <label id="feedback-label">Enter your message</label>
+                    <textarea name="feedback" id="msg" placeholder="Message" autocomplete="off"></textarea><br>
+                    <button id="submit" onclick="send()">Send</button>
+                </section>
             </section>
         </section>
     </main>
 </body>
+<script type="text/javascript" src="./js/app.js"></script>
 </html>
