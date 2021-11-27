@@ -24,8 +24,8 @@ nav button{display: none;}
 .fa-times{margin: 12px -63px 0px 0px;font-size: 15px;}
 .menu-list {list-style: none;display: flex;}
 .menu-list li {display: inline-block;margin-left: 0px;cursor: pointer;}
-header a{padding: 10px 20px;font-size: 22px;border: 2px solid #DC143C00;}
-header a:hover{/*background-color: #DC143C;color: #000;*/border: 2px solid #DC143C;}
+header a{padding: 10px 20px;font-size: 22px;}
+header a:hover{background-color: #DC143C;color: #000;}
 /*     SUB PAGES     */
 #home, #about, #projects, #contact, #all_projects{
     min-height: 100vh;max-width: 100vw;
