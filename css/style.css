@@ -87,20 +87,17 @@ header a:hover{background-color: #ffb703;color: #022037;}
 .fa:hover{opacity: 0.8;}
 /*     ABOUT     */
 #about section{
-    background-color: #0002;-webkit-backdrop-filter: blur(3px);backdrop-filter: blur(3px);
+    background-color: #0004;-webkit-backdrop-filter: blur(3px);backdrop-filter: blur(3px);
     box-shadow: 0px 0px 5px 3px #0004;border-radius: 4px;
     padding: 20px;margin: 20px;
 }
-#about hr{
-    width: 96%;margin: 10px 0px 15px 2%;
-    border: 1px solid #ffb703;box-shadow: 0px 0px 5px 3px #0007;
-}
+#about hr{margin: 10px 0px 15px 0px;border: 1px solid #ffb703;box-shadow: 0px 0px 5px 3px #0007;}
 /*     PROJECTS     */
 .project{
     min-height: 200px;min-width: 240px;max-width: 330px;
     flex: 30%;display: flex;flex-direction: column;align-items: center;justify-content: center;
     margin: 20px;padding: 20px 10px;
-    border: 5px solid #ffb703;border-radius: 4px;
+    border: 4px dashed #ffb703;border-radius: 4px;
     background-color: #0009;
     text-align: center;
 }
