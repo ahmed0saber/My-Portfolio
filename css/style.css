@@ -132,7 +132,7 @@ header a:hover{background-color: #ffb703;color: #022037;}
 /*     MEDIA QUERIES     */
 @media screen and (max-width: 760px) {
     #home, #contact{flex-direction: column;justify-content: center;}
-    #home #myInfo{text-align: center;}
+    #home #myInfo, #contact #text{text-align: center;}
 }
 @media (max-width: 660px){
     nav button{
