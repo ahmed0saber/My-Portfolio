@@ -1,44 +1,31 @@
 *{padding: 0;margin: 0;font-family: sans-serif;-webkit-tap-highlight-color: rgba(0,0,0,0);}
 a, button{text-decoration: none;transition-duration: 0.3s;}
-*:not(button), *:not(label){color: #ffb703;}
+*:not(button), *:not(label){color: #DC143C;}
 ::-webkit-scrollbar {width: 10px;}
-::-webkit-scrollbar-track {background: #021027;border: none;}
-::-webkit-scrollbar-track:hover {background: #022037;}
-::-webkit-scrollbar-thumb {background: #df9703;}
-::-webkit-scrollbar-thumb:hover {background: #efa703;}
+::-webkit-scrollbar-track {background: #1e1e1e;border: none;}
+::-webkit-scrollbar-track:hover {background: #2F2B34;}
+::-webkit-scrollbar-thumb {background: #DC143C;}
+::-webkit-scrollbar-thumb:hover {background: #EC244C;}
+body{
+    background-color: #121212;
+    background-image: linear-gradient(45deg, #121212 25%, #323232 25%, #323232 50%, #121212 50%, #121212 75%, #323232 75%, #323232 100%);
+    background-size: 56.57px 56.57px;
+}
 /*     NAVBAR     */
 header{
     position: fixed;z-index: 2;
-    width: 100%;background-color: #02203799;
+    width: 100%;background-color: #222 ;
     display: flex;flex: 1;
     align-items: center;
 }
-header p{font-size: 30px;padding: 10px;font-weight: bold;}
+header p{font-size: 30px;padding: 10px 10px 10px 20px;font-weight: bold;}
 header nav{position: absolute;right: 10px;display: flex;align-items: center;}
 nav button{display: none;}
 .fa-times{margin: 12px -63px 0px 0px;font-size: 15px;}
 .menu-list {list-style: none;display: flex;}
-.menu-list li {display: inline-block;margin-left: 32px;cursor: pointer;}
-header a{padding: 4px;font-size: 22px;}
-header a:hover{background-color: #ffb703;color: #022037;}
-/*     CONTAINERS     */
-#home_container{
-    background-size: 56.57px 56.57px;
-    background-image: linear-gradient(45deg, #023047 25%, #ffb703 25%, #ffb703 50%, #023047 50%, #023047 75%, #ffb703 75%, #ffb703 100%);
-}
-#about_container, #projects_container, #contact_container{background-size: cover;background-position: center;background-repeat: no-repeat;}
-#about_container{
-    background-color: #023047;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath data-color='outline' fill='none' stroke='%23EEB400' stroke-width='5' d='M33.5 100V66.5H0v-33h33.5V0h33v33.5H100v33H66.5V100z'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
-}
-#projects_container{
-    background-color: #EEB400;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath data-color='outline' fill='none' stroke='%23023047' stroke-width='5' d='M0 0h100v50H0zM-50 50h100v50h-100zM50 50h100v50h-100z'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
-}
-#contact_container{
-    background-color: #023047;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath id='a' data-color='fill' fill='%23EEB400' d='M50 50H0V0h50v50zM35 35V15H15v20h20zM100 100H50V50h50v50zM85 85V65H65v20h20zM35 64.9571v20H15v-20zM85 14.9571v20H65v-20z'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
-}
+.menu-list li {display: inline-block;margin-left: 0px;cursor: pointer;}
+header a{padding: 10px 20px;font-size: 22px;}
+header a:hover{background-color: #DC143C;color: #000;}
 /*     SUB PAGES     */
 #home, #about, #projects, #contact, #all_projects{
     min-height: 100vh;max-width: 100vw;
@@ -50,7 +37,7 @@ header a:hover{background-color: #ffb703;color: #022037;}
 #home{flex-direction: row;}
 #about{flex-direction: column;}
 #projects{flex-direction: column;justify-content: center;}
-#contact{flex-direction: row;background-color: #0008;}
+#contact{flex-direction: row;}
 /*     TYPOGRAPHY     */
 #home p, #about p, #projects p, #contact p{
     font-size: 20px;
@@ -60,25 +47,31 @@ header a:hover{background-color: #ffb703;color: #022037;}
     font-size: 45px;margin: 0px 0px 10px 0px;
     text-shadow: 0px 0px 5px #000;-webkit-text-stroke: 2px #0004;
 }
-#about h1, #projects h1{padding: 50px 0px 0px 0px;}
+#about h1::before, #projects h1::before, #contact h1::before{
+    content: "</";
+}
+#about h1::after, #projects h1::after, #contact h1::after{
+    content: ">";
+}
+#about h1, #projects h1{padding: 55px 0px 0px 0px;}
 #about h3{font-size: 24px;}
 /*     BUTTONS     */
 .project .view, #form button{
     min-width: 100px;max-width: 200px;width: 25%;
-    color: #ddd;background-color: #df9703;
-    border: 2px solid #df9703;border-radius: 4px;
+    color: #F3F9E3;background-color: #DC143C;
+    border: 2px solid #DC143C;border-radius: 4px;
     font-size: 18px;padding: 8px 0px;
 }
-.project .view:hover, #form button:hover{background-color: #ddd;color: #df9703;}
+.project .view:hover, #form button:hover{background-color: #121212;color: #DC143C;}
 /*     HOME     */
 #home img{
     height: 300px;margin: 20px;
-    border: 1px solid #0002;border-radius: 8px;box-shadow: 0px 0px 5px 3px #0004;
+    border: 1px solid #DC143C55;border-radius: 8px;box-shadow: 0px 0px 1px 1px #DC143C55;
 }
 #home .icons{
     font-size: 30px;
     margin: 10px 4px;
-    border: 2px solid #ffb703;border-radius: 50%;
+    border: 2px solid #DC143C;border-radius: 50%;
     height: 45px;width: 45px;
     line-height: 45px;text-align: center;
     background-color: #0009;
@@ -86,44 +79,44 @@ header a:hover{background-color: #ffb703;color: #022037;}
 }
 .fa:hover{opacity: 0.8;}
 /*     ABOUT     */
-#about section{
-    background-color: #0004;-webkit-backdrop-filter: blur(3px);backdrop-filter: blur(3px);
-    box-shadow: 0px 0px 5px 3px #0004;border-radius: 4px;
-    padding: 20px;margin: 20px;
+#about #grids section{
+    background-color: #eee1;-webkit-backdrop-filter: blur(3px);backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 4px 2px #0009;border-radius: 4px;padding: 20px;margin: 20px;
 }
-#about hr{margin: 10px 0px 15px 0px;border: 1px solid #ffb703;box-shadow: 0px 0px 5px 3px #0007;}
+#about #grids section span{
+    font-weight: bold;
+}
+#about hr{margin: 10px 0px 15px 0px;border: 1px solid #DC143C;box-shadow: 0px 0px 5px 3px #0007;}
 /*     PROJECTS     */
 .project{
     min-height: 200px;min-width: 240px;max-width: 330px;
     flex: 30%;display: flex;flex-direction: column;align-items: center;justify-content: center;
     margin: 20px;padding: 20px 10px;
-    border: 4px dashed #ffb703;border-radius: 4px;
+    border: 4px dashed #DC143C;border-radius: 4px;
     background-color: #0009;
     text-align: center;
 }
-.project #title{font-size: 22px;}
-.project #title::after{content: " >";}
-.project #title::before{content: "< ";}
-.project #description{font-size: 16px;margin: 10px 0px 20px 0px;}
+.project #title{font-size: 22px;font-weight: bold;}
+.project #description{font-size: 18px;margin: 10px 0px 20px 0px;}
 /*     CONTACT     */
 #contact section{margin: 10px;}
 #form{
-    background-color: #0002;-webkit-backdrop-filter: blur(3px);backdrop-filter: blur(3px);
-    padding: 10px;width: calc(100% - 80px);max-width: 500px;
+    background-color: #eee1;-webkit-backdrop-filter: blur(3px);backdrop-filter: blur(3px);
+    padding: 10px;width: calc(100% - 50px);max-width: 500px;
     border: 1px solid #0002;border-radius: 4px;
-    box-shadow: 0px 0px 5px 3px #0004;
+    box-shadow: 0px 0px 4px 2px #0009;
 }
 #form label{
-    font-size: 14px;color: #ddd;background-color: #df9703;
+    font-size: 14px;color: #F3F9E3;background-color: #DC143C;
     position: relative;top: 8px;left: 10px;z-index: 2;
     padding: 2px;
-    border: 2px solid #df9703;border-radius: 4px;
+    border: 2px solid #DC143C;border-radius: 4px;
 }
 #form input[type="text"], textarea{
-    width: calc(100% - 5px);height: 30px;
+    width: calc(100% - 8px);height: 30px;
     margin: 0px 0px 10px 0px;padding: 5px 0px 0px 5px;
-    border: 2px solid #df9703;border-radius: 4px;
-    font-size: 16px;
+    border: 2px solid #DC143C;border-radius: 4px;outline: none;
+    font-size: 16px;background-color: #121212;
 }
 #form textarea{height: 150px;padding: 10px 0px 0px 5px;}
 /*     MEDIA QUERIES     */
