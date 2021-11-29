@@ -12,7 +12,7 @@ var projects = [
         title: "Ask-Bin",
         description: "Ask-Bin is my first Full Stack website. It's where users can create {forms, quizzes, tests} , share them with people and receive their answers.",
         url: "https://ask-bin.000webhostapp.com/home.php",
-        img: "./images/myPic.jpg"
+        img: "./images/ab.png"
     },
     {
         id: "3",
