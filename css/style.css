@@ -69,12 +69,9 @@ header a:hover{border-bottom: 3px solid #DC143C;}
     border: 1px solid #DC143C55;border-radius: 8px;box-shadow: 0px 0px 1px 1px #DC143C55;
 }
 #home .icons{
-    font-size: 30px;
-    margin: 10px 4px;
+    font-size: 30px;line-height: 45px;text-align: center;margin: 10px 4px;
     border: 2px solid #DC143C;border-radius: 50%;
-    height: 45px;width: 45px;
-    line-height: 45px;text-align: center;
-    background-color: #0009;
+    height: 45px;width: 45px;background-color: #0009;
     text-shadow: 0px 0px 5px #000;-webkit-text-stroke: 2px #0004;box-shadow: 0px 0px 5px 3px #0004;
 }
 .fa:hover{opacity: 0.8;}
@@ -91,13 +88,21 @@ header a:hover{border-bottom: 3px solid #DC143C;}
 .project{
     min-height: 200px;min-width: 240px;max-width: 330px;
     flex: 30%;display: flex;flex-direction: column;align-items: center;justify-content: center;
-    margin: 20px;padding: 20px 10px;
-    border: 4px dashed #DC143C;border-radius: 4px;
-    background-color: #0009;
-    text-align: center;
+    margin: 20px;padding: 20px 10px;text-align: center;
+    border: 1px solid #DC143Caa;border-radius: 5px;box-shadow: 0px 0px 10px 2px #DC143C;
+    background-color: #0000;position: relative;transition-duration: 0.4s;
+}
+.project .view{opacity: 0;}
+.project:hover{background-color: #000;}
+.project:hover #title, .project:hover #description, .project:hover .view{opacity: 1;}
+.before_project{
+    height: 100%;width: 100%;background-size: cover;border-radius: 5px;
+    position: absolute;top: 0px;left: 0px;z-index: -1;
 }
 .project #title{font-size: 22px;font-weight: bold;}
 .project #description{font-size: 18px;margin: 10px 0px 20px 0px;}
+.project #title, .project #description{transition-duration: 0.4s;opacity: 0;}
+
 /*     CONTACT     */
 #contact section{margin: 10px;}
 #form{
@@ -127,6 +132,7 @@ header a:hover{border-bottom: 3px solid #DC143C;}
     #home #myInfo, #contact #text{text-align: center;}
 }
 @media (max-width: 660px){
+    header a:hover{border: 3px solid #DC143C;}
     nav button{
         display: block;
         width: 40px;height: 40px;
