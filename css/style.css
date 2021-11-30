@@ -122,13 +122,8 @@ header a:hover{border-bottom: 3px solid var(--pri);;}
 #form textarea{height: 150px;padding: 10px 0px 0px 5px;}
 /*     MEDIA QUERIES     */
 @media screen and (max-width:1000px){
-    header p{
-        font-size: 26px;
-    }
-    header a{
-        font-size: 19px;
-        padding: 8px;
-    }
+    header p{font-size: 26px;}
+    header a{font-size: 19px;padding: 8px;}
 }
 @media screen and (max-width: 900px) {
     #about #grids #in_row{flex-direction: column;}
@@ -141,13 +136,10 @@ header a:hover{border-bottom: 3px solid var(--pri);;}
 @media (max-width: 660px){
     header a:hover{border: 3px solid var(--pri);;}
     nav button{
-        display: block;
-        width: 40px;height: 40px;
+        display: block;width: 40px;height: 40px;
         border: none;outline: none;
         background: transparent;color: var(--pri);
-        font-size: 32px;
-        cursor: pointer;
-        z-index: 2;
+        font-size: 32px;cursor: pointer;z-index: 2;
     }
     nav i.fa-times,nav.opened i.fa-bars{display: none;}
     nav.opened i.fa-times,nav i.fa-bars{display: block;animation: enter 0.8s;}
@@ -155,12 +147,12 @@ header a:hover{border-bottom: 3px solid var(--pri);;}
     .menu-list{
         position: fixed;top: 0;right: 0;z-index: 1;
         width: 100%;height: 100%;
-        background-color: #000b;color: var(--pri);
+        background-color: #000c;color: var(--pri);
         padding: 80px 46px 46px 46px;
         flex-direction: column;align-items: flex-end;
         transform: translateX(100%);transition: transform 0.4s;
     }
-    .menu-list li{font-size: 1.7em;margin: 32px 0px;}
+    .menu-list li{font-size: 1.7em;margin: 22px 0px;}
     nav.opened .menu-list{transform: translateX(0);}
     nav.opened button{color: var(--pri);position: fixed;margin: -20px 0px 0px 0px;right: 40px;}
 }
