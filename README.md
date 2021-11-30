@@ -10,3 +10,5 @@ _View at_ https://ahmed0saber.github.io/My-Portfolio/
 ▶️ Local Storage   
 ▶️ WhatsApp API   
 ▶️ CSS Variables   
+▶️ Google Fonts   
+▶️ Font Awesome   
