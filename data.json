@@ -59,7 +59,7 @@
         {
             "id": "9",
             "title": "Technical Documentation",
-            "description": "A website where you can send messages globally. Backend by Ahmed Yasser.",
+            "description": "A technical documentation or tutorial for C# programming language basics.",
             "url": "https://ahmed0saber.github.io/freecodecamp-tasks/technical%20documentation/",
             "img": "./images/td.png"
         }
