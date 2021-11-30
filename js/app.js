@@ -65,6 +65,64 @@ projects.forEach(project => {
     <a href="${project.url}" target="_blank" class="view">Try Now</a>
 </section>`
 });
+/*     THEMES     */
+var current = 0;
+var themes = [
+    {
+        id: 0,
+        pri: "#DC143C",
+        scrollHover: "#EC244C",
+        imgBorder: "#DC143Caa"
+    },
+    {
+        id: 1,
+        pri: "#FF4301",
+        scrollHover: "#FF5311",
+        imgBorder: "#FF4301aa"
+    },
+    {
+        id: 2,
+        pri: "#D89216",
+        scrollHover: "#E8a226",
+        imgBorder: "#D89216aa"
+    },
+    {
+        id: 3,
+        pri: "#A7D129",
+        scrollHover: "#B7E139",
+        imgBorder: "#A7D129aa"
+    },
+    {
+        id: 4,
+        pri: "#03C4A1",
+        scrollHover: "#13D4B1",
+        imgBorder: "#03C4A1aa"
+    },
+    {
+        id: 5,
+        pri: "#FD367E",
+        scrollHover: "#FD468E",
+        imgBorder: "#FD367Eaa"
+    },
+    {
+        id: 6,
+        pri: "#C400C6",
+        scrollHover: "#D410D6",
+        imgBorder: "#C400C6aa"
+    },
+];
+if(localStorage.getItem("theme")){current = parseInt(localStorage.getItem("theme"));}else{current = 0;}
+theme();
+function theme(){
+    document.querySelector(':root').style.setProperty('--pri',themes[current].pri);
+    document.querySelector(':root').style.setProperty('--scrollHover',themes[current].scrollHover);
+    document.querySelector(':root').style.setProperty('--imgBorder',themes[current].imgBorder);
+}
+function changeTheme(){
+    if(current==themes.length-1){current=0;}else{current+=1;}
+    localStorage.setItem("theme", current);
+    theme();
+}
 /*     NAVBAR     */
 var menu = document.querySelector('nav');
 var menuBtn = document.querySelector('nav button');
