@@ -147,6 +147,7 @@ header a:hover{border-bottom: 3px solid var(--pri);;}
         flex-direction: column;align-items: flex-end;
         transform: translateX(100%);transition: transform 0.4s;
     }
+    header a{font-size: 22px;}
     .menu-list li{font-size: 1.7em;margin: 22px 0px;}
     nav.opened .menu-list{transform: translateX(0);}
     nav.opened button{color: var(--pri);position: fixed;margin: -20px 0px 0px 0px;right: 40px;}
