@@ -1,8 +1,4 @@
-:root {
-    --pri: #DC143C;
-    --scrollHover: #EC244C;
-    --imgBorder: #DC143Caa;
-}
+:root {--pri: #DC143C;--scrollHover: #EC244C;--imgBorder: #DC143Caa;}
 *{padding: 0;margin: 0;font-family: Bree Serif, sans-serif;-webkit-tap-highlight-color: rgba(0,0,0,0);}
 a, button{text-decoration: none;transition-duration: 0.3s;}
 *:not(button), *:not(label){color: var(--pri);}
