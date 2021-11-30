@@ -96,7 +96,6 @@ header a:hover{border-bottom: 3px solid var(--pri);;}
 .project #title{font-size: 22px;font-weight: bold;}
 .project #description{font-size: 18px;margin: 10px 0px 20px 0px;}
 .project #title, .project #description{transition-duration: 0.4s;opacity: 0;}
-
 /*     CONTACT     */
 #contact section{margin: 10px;}
 #form{
